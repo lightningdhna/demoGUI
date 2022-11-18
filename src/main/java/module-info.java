@@ -14,6 +14,6 @@ module com.example.demogui {
     opens com.example.demogui to javafx.fxml;
     exports com.example.demogui;
 
-    opens dhung to javafx.fxml;
-    exports dhung;
+    opens dhung.view to javafx.fxml;
+    exports dhung.view;
 }
