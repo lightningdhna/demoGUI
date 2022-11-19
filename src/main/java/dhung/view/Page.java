@@ -45,6 +45,13 @@ public class Page {
         this.root.getChildren().add(page.getRoot());
         page.setParent(this);
     }
+    public void add(Page page, int x, int y){
+        childrenPage.add(page);
+        this.root.getChildren().add(page.getRoot());
+        page.root.setLayoutX(x);
+        page.root.setLayoutY(y);
+        page.setParent(this);
+    }
     public boolean has(Page page) {
         return childrenPage.contains(page);
     }
