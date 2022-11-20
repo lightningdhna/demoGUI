@@ -12,40 +12,40 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #102933; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #102933; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="500.0" layoutX="-290.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="500.0" fitWidth="850.0" layoutX="-290.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../image/background1.png" />
          </image>
       </ImageView>
       <Pane layoutX="623.0" layoutY="136.0" prefWidth="300.0" style="-fx-background-color: #F5F5F5;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <PasswordField layoutX="50.0" layoutY="200.0" prefHeight="35.0" prefWidth="200.0" promptText="Passsword" style="-fx-background-radius: 15;">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </PasswordField>
-            <TextField layoutX="50.0" layoutY="150.0" prefHeight="35.0" prefWidth="200.0" promptText="Username" style="-fx-background-radius: 15;">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </TextField>
             <Label layoutX="50.0" layoutY="75.0" prefHeight="50.0" prefWidth="150.0" text="Sign in" textFill="#2596be">
                <font>
                   <Font name="SansSerif Bold" size="35.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="280.0" onMouseClicked="#signIn" prefHeight="50.0" prefWidth="200.0" ripplerFill="#194181" style="-fx-background-color: #2596be; -fx-background-radius: 30;" text="Sign in" textFill="WHITE">
+            <TextField fx:id="textField" layoutX="50.0" layoutY="150.0" prefHeight="35.0" prefWidth="200.0" promptText="Username" style="-fx-background-radius: 15;">
                <font>
-                  <Font name="SansSerif Regular" size="20.0" />
+                  <Font size="14.0" />
                </font>
-            </JFXButton>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="50.0" layoutY="200.0" prefHeight="35.0" prefWidth="200.0" promptText="Passsword" style="-fx-background-radius: 15;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
             <JFXCheckBox layoutX="50.0" layoutY="250.0" text="Remember me">
                <font>
                   <Font name="SansSerif Regular" size="14.0" />
                </font>
             </JFXCheckBox>
+            <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="280.0" onMouseClicked="#signIn" prefHeight="50.0" prefWidth="200.0" ripplerFill="#194181" style="-fx-background-color: #2596be; -fx-background-radius: 30;" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </JFXButton>
             <Label layoutX="50.0" layoutY="400.0" text="New here?">
                <font>
                   <Font name="SansSerif Regular" size="14.0" />
@@ -61,5 +61,10 @@
             </Label>
          </children>
       </Pane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="150.0" prefHeight="100.0" prefWidth="500.0" text="Welcome back!!" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="SansSerif Bold" size="50.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

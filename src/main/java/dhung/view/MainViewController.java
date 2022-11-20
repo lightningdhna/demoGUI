@@ -1,5 +1,6 @@
 package dhung.view;
 
+import dhung.model.Account;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
@@ -10,6 +11,7 @@ import java.util.ResourceBundle;
 
 public class MainViewController extends Page implements Initializable {
     @FXML AnchorPane root;
+    Account account;
     LoginPageController loginPage ;
     public MainViewController() throws IOException {
 //        super(Type.MainPage);
