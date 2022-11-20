@@ -14,7 +14,7 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #102933; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="500.0" fitWidth="850.0" layoutX="-290.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="500.0" fitWidth="850.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../image/background1.png" />
          </image>
@@ -36,7 +36,7 @@
                   <Font size="14.0" />
                </font>
             </PasswordField>
-            <JFXCheckBox layoutX="50.0" layoutY="250.0" text="Remember me">
+            <JFXCheckBox fx:id="checkBox" layoutX="50.0" layoutY="250.0" selected="true" text="Remember me">
                <font>
                   <Font name="SansSerif Regular" size="14.0" />
                </font>

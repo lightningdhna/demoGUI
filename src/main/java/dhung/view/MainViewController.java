@@ -11,7 +11,7 @@ import java.util.ResourceBundle;
 
 public class MainViewController extends Page implements Initializable {
     @FXML AnchorPane root;
-    Account account;
+    private Account account;
     LoginPageController loginPage ;
     public MainViewController() throws IOException {
 //        super(Type.MainPage);
@@ -20,6 +20,10 @@ public class MainViewController extends Page implements Initializable {
     public void doSomething() throws IOException {
         loginPage= new LoginPageController();
         add(loginPage);
+    }
+
+    public void setAccount(Account account){
+        this.account = account;
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
