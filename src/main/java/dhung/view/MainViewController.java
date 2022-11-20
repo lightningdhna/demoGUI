@@ -3,6 +3,7 @@ package dhung.view;
 import dhung.model.Account;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ListView;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
@@ -11,19 +12,21 @@ import java.util.ResourceBundle;
 
 public class MainViewController extends Page implements Initializable {
     @FXML AnchorPane root;
+
     private Account account;
     LoginPageController loginPage ;
+    ShowAccountPageController showAccountPage;
+
     public MainViewController() throws IOException {
-//        super(Type.MainPage);
     }
 
-    public void doSomething() throws IOException {
-        loginPage= new LoginPageController();
-        add(loginPage);
-    }
 
     public void setAccount(Account account){
         this.account = account;
+    }
+    public void setPage1() throws IOException {
+        showAccountPage = new ShowAccountPageController();
+        add(showAccountPage,50,0);
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

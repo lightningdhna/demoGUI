@@ -1,28 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="root" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dhung.view.MainViewController">
    <children>
+      <AnchorPane prefWidth="850.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <AnchorPane layoutY="14.0" prefWidth="250.0" style="-fx-background-color: #336699; -fx-background-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <effect>
             <DropShadow />
          </effect>
-      </AnchorPane>
-      <AnchorPane prefWidth="850.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <AnchorPane prefWidth="50.0" style="-fx-background-color: #336699; -fx-background-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <effect>
-            <DropShadow />
-         </effect>
          <children>
-            <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="300.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../../icon/account-list.png" />
-               </image>
-            </ImageView>
+            <AnchorPane prefWidth="50.0" style="-fx-background-color: #336699; -fx-background-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="300.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../icon/account-list.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" graphicTextGap="10.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#setPage1" prefHeight="60.0" ripplerFill="#54c3eb" text="Danh sách accounts" textFill="#bbffb8" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="295.0">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </JFXButton>
          </children>
       </AnchorPane>
    </children>

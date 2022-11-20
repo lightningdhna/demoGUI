@@ -16,7 +16,8 @@ module com.example.demogui {
 
     opens dhung.view to javafx.fxml;
     exports dhung.view;
-
+    opens dhung.model to javafx.fxml;
+    exports dhung.model;
     requires java.sql;
     requires com.microsoft.sqlserver.jdbc;
     requires com.jfoenix;
