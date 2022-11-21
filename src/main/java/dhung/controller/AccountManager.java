@@ -12,6 +12,7 @@ public class AccountManager {
     private AccountManager(){
         accounts=AccountTable.getAllAccount();
     }
+
     public List<Account> getAllAccount(){
         return accounts;
     }
@@ -19,7 +20,7 @@ public class AccountManager {
         return manager;
     }
     public boolean checkExist(Account account){
-        return AccountTable.searchAccount(account).size()==1;
+        return AccountTable.search(account).size()==1;
     }
 
     public String canAdd(Account account){

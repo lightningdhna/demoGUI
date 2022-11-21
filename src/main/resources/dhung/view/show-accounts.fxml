@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
@@ -22,5 +26,17 @@
             </AnchorPane>
         </content>
       </ScrollPane>
+      <JFXButton buttonType="RAISED" layoutX="270.0" layoutY="20.0" onMouseClicked="#exit" prefHeight="30.0" prefWidth="30.0" ripplerFill="#df1616" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../icon/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

@@ -20,6 +20,10 @@ public class ShowAccountPageController extends Page{
     @FXML
     TableColumn usernameColumn,passwordColumn;
 
+    public void exit(){
+        ((MainViewController)this.getParent()).exit();
+    }
+
     private void showAccounts(){
         List<Account> accounts = AccountManager.getManager().getAllAccount();
         ObservableList<Account> accountsShow = FXCollections.observableArrayList();

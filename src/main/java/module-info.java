@@ -11,9 +11,7 @@ module com.example.demogui {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-
-
-
+    
     opens dhung.view to javafx.fxml;
     exports dhung.view;
     opens dhung.model to javafx.fxml;

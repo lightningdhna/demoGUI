@@ -1,13 +1,10 @@
 package dhung.dbc;
 
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import com.microsoft.sqlserver.jdbc.SQLServerDriver;
+import java.sql.*;
 
 public class DatabaseConnection {
     private static Connection conn = null;
+    private static Statement statement = null;
 
     private static void createConnection() throws SQLException {
         try {
@@ -19,12 +16,13 @@ public class DatabaseConnection {
             String pass  =  "Na01639931063184";
 
             conn = DriverManager.getConnection(dbURL, user, pass);
+            statement=conn.createStatement();
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
     }
 
-    public static Connection getConnection() {
+    public static void startConnecting() {
         if(conn==null) {
             try {
                 createConnection();
@@ -32,6 +30,11 @@ public class DatabaseConnection {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static Connection getConnection() throws SQLException {
+        if(conn==null||conn.isClosed())
+            startConnecting();
         return conn;
     }
 
@@ -45,4 +48,14 @@ public class DatabaseConnection {
         }
     }
 
+    public static ResultSet executeQuery(String query) throws SQLException {
+        if(conn==null||conn.isClosed())
+                createConnection();
+        return statement.executeQuery(query);
+    }
+    public static boolean execute(String query) throws SQLException {
+        if(conn==null||conn.isClosed())
+            createConnection();
+        return statement.execute(query);
+    }
 }

@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -28,6 +29,11 @@ public class MainViewController extends Page implements Initializable {
         showAccountPage = new ShowAccountPageController();
         add(showAccountPage,50,0);
     }
+
+    public void exit() {
+        ((Stage)getRoot().getScene().getWindow()).close();
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         setRoot(root);

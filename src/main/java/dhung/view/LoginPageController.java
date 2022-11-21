@@ -27,6 +27,9 @@ public class LoginPageController extends Page implements Initializable {
         super(Type.LoginPage);
     }
 
+    public void exit(){
+        ((MainViewController)getParent()).exit();
+    }
     public void signIn() throws IOException {
         Account account = new Account(textField.getText(),passwordField.getText());
         if(AccountManager.getManager().checkExist(account)){

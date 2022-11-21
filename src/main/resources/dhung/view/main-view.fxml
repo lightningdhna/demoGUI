@@ -45,5 +45,17 @@
             </JFXButton>
          </children>
       </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="10.0" onMouseClicked="#exit" prefHeight="30.0" prefWidth="30.0" ripplerFill="#df1616" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../icon/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

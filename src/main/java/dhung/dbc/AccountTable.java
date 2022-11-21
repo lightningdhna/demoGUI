@@ -2,22 +2,19 @@ package dhung.dbc;
 
 import dhung.model.Account;
 
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AccountTable {
 
     private static boolean hasTable = false;
-    private static final Connection conn = DatabaseConnection.getConnection();
-
     public static List<Account> castResultSet(ResultSet rs) throws SQLException {
         List<Account> accounts = new ArrayList<>();
         while(rs.next()){
-            accounts.add(new Account(rs.getInt(1),
+            accounts.add(new Account(
+                    rs.getInt(1),
                     rs.getString(2),
                     rs.getString(3),
                     rs.getString(4)));
@@ -34,43 +31,43 @@ public class AccountTable {
                         "[password] varchar(100) not null,"+
                         "[access authority] varchar(20) not null default'user'"+
                         ")";
-        Connection conn = DatabaseConnection.getConnection();
         try {
-            Statement statement = conn.createStatement();
-            statement.execute(query);
+            DatabaseConnection.execute(query);
         } catch (SQLException ignored) {
 
         }
     }
-    public static List<Account> searchAccount(Account account){
+    public static List<Account> search(Account account){
         createTable();
-        String query= "select id, username, password,[access authority]\n" +
+
+        String query=String.format("select id, username, password,[access authority]\n" +
                 "from account_table\n" +
-                "where "+
-                "username = " +"'"+account.getUsername()+"'"+
-                " and "+
-                "password = " +"'"+account.getPassword()+"'";
+                "where username = '%s' and password = '%s2'",account.getUsername(),account.getPassword());
         try {
-            Statement statement = conn.createStatement();
-            ResultSet rs = statement.executeQuery(query);
+            ResultSet rs = DatabaseConnection.executeQuery(query);
             return castResultSet(rs);
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return new ArrayList<>();
+    }
+    public void add(Account account) throws SQLException {
+        createTable();
+        String query=String.format(
+                "insert into account_table values(%s,%s)",account.getUsername(),account.getPassword()
+        );
+        DatabaseConnection.execute(query);
     }
     public static List<Account> getAllAccount(){
         createTable();
         String query= "select id, username, password,[access authority]\n" +
                 "from account_table";
         try {
-            Statement statement = conn.createStatement();
-            ResultSet rs = statement.executeQuery(query);
+            ResultSet rs = DatabaseConnection.executeQuery(query);
             return castResultSet(rs);
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return new ArrayList<>();
     }
-
 }
