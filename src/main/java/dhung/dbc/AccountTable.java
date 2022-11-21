@@ -25,12 +25,12 @@ public class AccountTable {
         if(hasTable)
            return;
         hasTable = true;
-        String query=   "create table account_table( "+
-                        "id int identity(1,1)," +
-                        "username varchar(100) not null,"+
-                        "[password] varchar(100) not null,"+
-                        "[access authority] varchar(20) not null default'user'"+
-                        ")";
+        String query= """
+                create table account_table(
+                id int identity(1,1),
+                username varchar(100) not null,
+                [password] varchar(100) not null,
+                [access authority] varchar(20) not null default 'user')""";
         try {
             DatabaseConnection.execute(query);
         } catch (SQLException ignored) {
@@ -40,9 +40,10 @@ public class AccountTable {
     public static List<Account> search(Account account){
         createTable();
 
-        String query=String.format("select id, username, password,[access authority]\n" +
-                "from account_table\n" +
-                "where username = '%s' and password = '%s2'",account.getUsername(),account.getPassword());
+        String query=String.format("""
+                select id, username, password,[access authority]
+                from account_table
+                where username = '%s' and password = '%s2'""",account.getUsername(),account.getPassword());
         try {
             ResultSet rs = DatabaseConnection.executeQuery(query);
             return castResultSet(rs);
@@ -51,12 +52,12 @@ public class AccountTable {
         }
         return new ArrayList<>();
     }
-    public void add(Account account) throws SQLException {
+    public boolean add(Account account) throws SQLException {
         createTable();
         String query=String.format(
                 "insert into account_table values(%s,%s)",account.getUsername(),account.getPassword()
         );
-        DatabaseConnection.execute(query);
+        return DatabaseConnection.execute(query);
     }
     public static List<Account> getAllAccount(){
         createTable();
