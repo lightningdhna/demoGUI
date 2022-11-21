@@ -24,7 +24,11 @@ public class AccountManager {
     }
 
     public boolean add(Account account){
-        return AccountTable.add(account);
+        if(AccountTable.add(account)){
+            accounts.add(account);
+            return true;
+        }
+        return false;
     }
 
 
