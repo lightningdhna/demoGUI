@@ -1,5 +1,6 @@
 package dhung.view;
 
+import dhung.controller.AccountManager;
 import dhung.dbc.AccountTable;
 import dhung.dbc.DatabaseConnection;
 import dhung.model.Account;
@@ -16,9 +17,7 @@ public class MainView extends Application {
     public static void  main(String... args) {
 
         DatabaseConnection.startConnecting();
-        System.out.println(AccountTable.add(new Account("hung184","1842002")));
-        System.out.println("success");
-//        launch();
+        launch();
         DatabaseConnection.closeConnection();
     }
 
@@ -31,6 +30,5 @@ public class MainView extends Application {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.show();
-
     }
 }

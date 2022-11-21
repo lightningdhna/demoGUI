@@ -58,7 +58,7 @@
                   <Font name="SansSerif Regular" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="120.0" layoutY="400.0" text="Create an account" textFill="#2596be">
+            <Label layoutX="120.0" layoutY="400.0" onMouseClicked="#signUp" text="Create an account" textFill="#2596be">
                <font>
                   <Font name="SansSerif Regular" size="14.0" />
                </font>

@@ -2,7 +2,8 @@ package dhung.view;
 
 public class Type {
     public static final String  LoginPage = "login-page.fxml";
-    public static final String MainView = "main-view.fxml";
-    public static final String MainPage = "main-page.fxml";
+//    public static final String MainView = "main-view.fxml";
+//    public static final String MainPage = "main-page.fxml";
     public static final String ShowAccounts = "show-accounts.fxml";
+    public static final String SignUpPage = "sign-up-page.fxml";
 }

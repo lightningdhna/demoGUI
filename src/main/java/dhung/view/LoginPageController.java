@@ -23,6 +23,7 @@ public class LoginPageController extends Page implements Initializable {
     PasswordField passwordField;
     @FXML
     JFXCheckBox checkBox;
+    SignUpPageController signUpPage;
     public LoginPageController() throws IOException {
         super(Type.LoginPage);
     }
@@ -39,8 +40,13 @@ public class LoginPageController extends Page implements Initializable {
                 writer.write(textField.getText()+'\n'+passwordField.getText());
                 writer.close();
             }
+            if(signUpPage!=null) signUpPage.close();
             close();
         }
+    }
+    public void signUp() throws IOException {
+        signUpPage= new SignUpPageController();
+        getParent().add(signUpPage,550,0);
     }
 
     @Override

@@ -23,8 +23,8 @@ public class AccountManager {
         return AccountTable.search(account).size()==1;
     }
 
-    public void add(Account account){
-
+    public boolean add(Account account){
+        return AccountTable.add(account);
     }
 
 

@@ -28,7 +28,7 @@ public class AccountTable {
         String query= """
                 create table account_table(
                 id int identity(1,1),
-                username varchar(100) not null,
+                username varchar(100) not null unique,
                 [password] varchar(100) not null,
                 [access authority] varchar(20) not null default 'user')""";
         try {
@@ -39,10 +39,14 @@ public class AccountTable {
     }
     public static List<Account> search(Account account){
         createTable();
-        String query=String.format("""
+        String query=String.format(
+                """
                 select id, username, password,[access authority]
                 from account_table
-                where username = '%s' and password = '%s2'""",account.getUsername(),account.getPassword());
+                where username = '%s' and password = '%s'
+                """
+                ,account.getUsername(),account.getPassword()
+        );
         try {
             ResultSet rs = DatabaseConnection.executeQuery(query);
             return castResultSet(rs);
