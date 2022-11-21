@@ -9,14 +9,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.sql.SQLException;
+
 public class MainView extends Application {
 
     public static void  main(String... args) {
 
         DatabaseConnection.startConnecting();
-        AccountTable.search(new Account("lasdjkf","sadfj"));
-        String s= String.format("alksdfj%1$s,%1$s","asldfj");
-        System.out.println(s);
+        System.out.println(AccountTable.add(new Account("hung184","1842002")));
         System.out.println("success");
 //        launch();
         DatabaseConnection.closeConnection();

@@ -39,7 +39,6 @@ public class AccountTable {
     }
     public static List<Account> search(Account account){
         createTable();
-
         String query=String.format("""
                 select id, username, password,[access authority]
                 from account_table
@@ -52,12 +51,20 @@ public class AccountTable {
         }
         return new ArrayList<>();
     }
-    public boolean add(Account account) throws SQLException {
+    public static boolean add(Account account)  {
         createTable();
-        String query=String.format(
-                "insert into account_table values(%s,%s)",account.getUsername(),account.getPassword()
+        String query=String.format("""
+                        insert into account_table(username,password)
+                        values('%s','%s')
+                        """,account.getUsername(),account.getPassword()
         );
-        return DatabaseConnection.execute(query);
+        try {
+            DatabaseConnection.execute(query);
+            return true;
+        } catch (SQLException e) {
+//            e.printStackTrace();
+            return false;
+        }
     }
     public static List<Account> getAllAccount(){
         createTable();

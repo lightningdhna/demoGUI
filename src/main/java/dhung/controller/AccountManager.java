@@ -23,10 +23,9 @@ public class AccountManager {
         return AccountTable.search(account).size()==1;
     }
 
-    public String canAdd(Account account){
-        return "";
-    }
+    public void add(Account account){
 
+    }
 
 
 }

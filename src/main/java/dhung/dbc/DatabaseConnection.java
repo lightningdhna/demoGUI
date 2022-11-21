@@ -53,9 +53,9 @@ public class DatabaseConnection {
                 createConnection();
         return statement.executeQuery(query);
     }
-    public static boolean execute(String query) throws SQLException {
+    public static void execute(String query) throws SQLException {
         if(conn==null||conn.isClosed())
             createConnection();
-        return statement.execute(query);
+        statement.execute(query);
     }
 }
