@@ -11,7 +11,6 @@
 
 <AnchorPane fx:id="root" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dhung.view.MainViewController">
    <children>
-      <AnchorPane prefWidth="850.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <AnchorPane layoutY="14.0" prefWidth="250.0" style="-fx-background-color: #336699; -fx-background-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <effect>
             <DropShadow />
@@ -25,14 +24,30 @@
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
                <children>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="300.0" pickOnBounds="true">
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" AnchorPane.topAnchor="50.0">
+                     <image>
+                        <Image url="@../../icon/home.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="300.0" pickOnBounds="true" AnchorPane.topAnchor="120.0">
                      <image>
                         <Image url="@../../icon/account-list.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <JFXButton buttonType="RAISED" graphicTextGap="10.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#setPage1" prefHeight="60.0" ripplerFill="#54c3eb" text="Danh sách accounts" textFill="#bbffb8" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="295.0">
+            <JFXButton buttonType="RAISED" graphicTextGap="10.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#setPage1" prefHeight="60.0" ripplerFill="#54c3eb" text="Account list" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" graphicTextGap="10.0" layoutX="53.0" layoutY="60.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="60.0" ripplerFill="#54c3eb" text="Home" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
                <font>
                   <Font name="SansSerif Bold" size="18.0" />
                </font>
@@ -50,6 +65,23 @@
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
                <image>
                   <Image url="@../../icon/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="435.0" layoutY="127.0" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #EEEEEE;" text="Button">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" onMouseClicked="#logOut" prefHeight="30.0" prefWidth="30.0" ripplerFill="#df1616" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" onMouseClicked="#logOut" pickOnBounds="true">
+               <image>
+                  <Image url="@../../icon/logout.png" />
                </image>
             </ImageView>
          </graphic>

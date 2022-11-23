@@ -27,10 +27,13 @@ public class AccountTable {
         hasTable = true;
         String query= """
                 create table account_table(
-                id int identity(1,1),
-                username varchar(100) not null unique,
-                [password] varchar(100) not null,
-                [access authority] varchar(20) not null default 'user')""";
+                    id int identity(1,1),
+                    username varchar(100) not null unique,
+                    [password] varchar(100) not null,
+                    [access authority] varchar(20) not null default 'user',
+                    constraint checkValue check( username like '_%' and password like '_%' )
+                )
+                """;
         try {
             DatabaseConnection.execute(query);
         } catch (SQLException ignored) {

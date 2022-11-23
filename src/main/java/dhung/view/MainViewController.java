@@ -26,12 +26,19 @@ public class MainViewController extends Page implements Initializable {
         this.account = account;
     }
     public void setPage1() throws IOException {
-        showAccountPage = new ShowAccountPageController();
-        add(showAccountPage,50,0);
+        if(showAccountPage ==null) {
+            showAccountPage = new ShowAccountPageController();
+            add(showAccountPage, 50, 50);
+        }
+        showAccountPage.toFront();
     }
 
     public void exit() {
         ((Stage)getRoot().getScene().getWindow()).close();
+    }
+    public void logOut() throws IOException {
+        loginPage = new LoginPageController();
+        add(loginPage);
     }
 
     @Override
