@@ -24,7 +24,8 @@ public class ShowAccountPageController extends Page{
         ((MainViewController)this.getParent()).exit();
     }
 
-    private void showAccounts(){
+    public void showAccounts(){
+        tableView.getItems().clear();
         List<Account> accounts = AccountManager.getManager().getAllAccount();
         ObservableList<Account> accountsShow = FXCollections.observableArrayList();
         accountsShow.addAll(accounts);

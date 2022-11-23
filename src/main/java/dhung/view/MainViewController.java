@@ -21,16 +21,17 @@ public class MainViewController extends Page implements Initializable {
     public MainViewController() throws IOException {
     }
 
-
     public void setAccount(Account account){
         this.account = account;
     }
     public void setPage1() throws IOException {
-        if(showAccountPage ==null) {
+        if(showAccountPage == null) {
+            System.out.println("1");
             showAccountPage = new ShowAccountPageController();
-            add(showAccountPage, 50, 50);
+            add(showAccountPage, 350, 50);
         }
         showAccountPage.toFront();
+        showAccountPage.showAccounts();
     }
 
     public void exit() {
