@@ -23,6 +23,15 @@ public class Account {
     public String getAccessAuthority(){
         return accessAuthority;
     }
+    public void setAccessAuthority(String string){
+        accessAuthority = string;
+    }
+    public void assign(Account account) {
+        this.id = account.id;
+        this.password= account.password;
+        this.username= account.username;
+        this.accessAuthority= account.accessAuthority;
+    }
     public int getId(){
         return id;
     }

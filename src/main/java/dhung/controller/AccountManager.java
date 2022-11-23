@@ -20,7 +20,12 @@ public class AccountManager {
         return manager;
     }
     public boolean checkExist(Account account){
-        return AccountTable.search(account).size()==1;
+        List<Account> resultSearch=AccountTable.search(account);
+         if(resultSearch.size()==1){
+             account.assign(resultSearch.get(0));
+             return true;
+         }
+         else return false;
     }
 
     public boolean add(Account account){

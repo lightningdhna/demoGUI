@@ -24,7 +24,10 @@ public class MainViewController extends Page implements Initializable {
     public void setAccount(Account account){
         this.account = account;
     }
+    public Account getAccount() {return this.account;};
     public void setPage1() throws IOException {
+        if(!account.getAccessAuthority().equals("admin"))
+            return;
         if(showAccountPage == null) {
             System.out.println("1");
             showAccountPage = new ShowAccountPageController();

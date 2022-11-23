@@ -74,7 +74,11 @@
       </JFXButton>
       <JFXButton buttonType="RAISED" layoutX="435.0" layoutY="127.0" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #EEEEEE;" text="Button">
          <graphic>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icon/form.png" />
+               </image>
+            </ImageView>
          </graphic>
       </JFXButton>
       <JFXButton buttonType="RAISED" onMouseClicked="#logOut" prefHeight="30.0" prefWidth="30.0" ripplerFill="#df1616" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
