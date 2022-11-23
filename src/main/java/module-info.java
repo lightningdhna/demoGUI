@@ -11,13 +11,14 @@ module com.example.demogui {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-
-    opens com.example.demogui to javafx.fxml;
-    exports com.example.demogui;
-
+    
     opens dhung.view to javafx.fxml;
     exports dhung.view;
+    opens dhung.model to javafx.fxml;
+    exports dhung.model;
     requires java.sql;
     requires com.microsoft.sqlserver.jdbc;
-    requires java.naming;
+    requires com.jfoenix;
+
+
 }
