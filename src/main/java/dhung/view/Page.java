@@ -14,11 +14,15 @@ public class Page {
     private AnchorPane root = null;
     private String type = null;
     public Page(){}
-    public Page(String type) throws IOException {
+    public Page(String type) {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(type));
         fxmlLoader.setController(this);
-        fxmlLoader.load();
+        try {
+            fxmlLoader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         root =(AnchorPane) fxmlLoader.getRoot();
         this.type=type;
 

@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 
 public class SignUpPageController extends Page{
-    public SignUpPageController() throws IOException {
+    public SignUpPageController() {
         super(Type.SignUpPage);
     }
 

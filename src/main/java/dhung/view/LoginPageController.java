@@ -24,7 +24,7 @@ public class LoginPageController extends Page implements Initializable {
     @FXML
     JFXCheckBox checkBox;
     SignUpPageController signUpPage;
-    public LoginPageController() throws IOException {
+    public LoginPageController() {
         super(Type.LoginPage);
     }
 
@@ -41,6 +41,8 @@ public class LoginPageController extends Page implements Initializable {
                 writer.close();
             }
             if(signUpPage!=null) signUpPage.close();
+            ((MainViewController)getParent()).showIcon();
+            ((MainViewController)getParent()).setHomePage();
             close();
         }
     }
