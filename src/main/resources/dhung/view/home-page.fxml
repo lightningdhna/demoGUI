@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="146.0" layoutY="225.0" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #EEEEEE;" text="Danh sách nhận thưởng" textAlignment="CENTER" textFill="#226fc1" wrapText="true" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font name="SansSerif Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <TextField layoutX="125.0" layoutY="88.0" prefHeight="30.0" prefWidth="450.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="75.0" />
+      <JFXButton layoutX="601.0" layoutY="78.0" prefHeight="40.0" prefWidth="40.0" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="70.0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icon/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

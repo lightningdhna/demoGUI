@@ -20,5 +20,4 @@ module com.example.demogui {
     requires com.microsoft.sqlserver.jdbc;
     requires com.jfoenix;
 
-
 }
