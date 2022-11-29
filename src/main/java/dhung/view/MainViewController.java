@@ -26,6 +26,7 @@ public class MainViewController extends Page implements Initializable {
     ManagerPageController managerPage;
     StatisticPageController statisticPage;
 
+
     public void setHomePage(){
         if(homePage==null) {
             homePage = new HomePageController();
@@ -105,10 +106,6 @@ public class MainViewController extends Page implements Initializable {
         ((Stage)getRoot().getScene().getWindow()).close();
     }
     public void logOut() throws IOException {
-//        for(var page:getChildren())
-//            page.close();
-//        loginPage = new LoginPageController();
-//        add(loginPage);
         Stage stage = ((Stage)getRoot().getScene().getWindow());
         stage.close();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
