@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXCheckBox;
 import dhung.controller.AccountManager;
 import dhung.model.Account;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.PasswordField;
@@ -34,13 +35,22 @@ public class LoginPageController extends Page implements Initializable {
     public void signIn() throws IOException {
         Account account = new Account(textField.getText(),passwordField.getText());
         if(AccountManager.getManager().checkExist(account)){
-            ((MainViewController)getParent()).setAccount(account);
-            if(checkBox.isSelected()){
-                BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/save/account-save.txt"));
-                writer.write(textField.getText()+'\n'+passwordField.getText());
-                writer.close();
-            }
+            Thread thread = new Thread(
+                    () -> {
+                        if(checkBox.isSelected()){
+                            try {
+                                BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/save/account-save.txt"));
+                                writer.write(textField.getText()+'\n'+passwordField.getText());
+                                writer.close();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+            );
+
             if(signUpPage!=null) signUpPage.close();
+            ((MainViewController)getParent()).setAccount(account);
             ((MainViewController)getParent()).showIcon();
             ((MainViewController)getParent()).setHomePage();
             close();

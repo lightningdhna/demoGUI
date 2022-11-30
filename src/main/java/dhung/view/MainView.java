@@ -5,6 +5,7 @@ import dhung.dbc.AccountTable;
 import dhung.dbc.DatabaseConnection;
 import dhung.model.Account;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -15,8 +16,11 @@ import java.sql.SQLException;
 public class MainView extends Application {
 
     public static void  main(String... args) {
+        Thread thread = new Thread(
+                DatabaseConnection::startConnecting
+        );
 
-        DatabaseConnection.startConnecting();
+//        DatabaseConnection.startConnecting();
         launch();
         DatabaseConnection.closeConnection();
     }
