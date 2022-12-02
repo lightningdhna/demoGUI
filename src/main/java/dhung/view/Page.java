@@ -84,6 +84,5 @@ public class Page {
         parentPage=null;
         root = null;
         type=null;
-
     }
 }

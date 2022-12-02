@@ -1,0 +1,17 @@
+#BorderPane{
+    -fx-background-color: #b0e0e6;
+}
+.button{
+    -fx-background-color: rgba(32,50,100, 0.5);
+    -fx-border-radius: 10;
+}
+.button:hover{
+    -fx-background-color: rgba(32,50,100);
+    -fx-border-radius: 10;
+}
+#HBox{
+    -fx-background-color: #87ceeb;
+}
+#VBox{
+    -fx-background-color: #fffafa;
+}

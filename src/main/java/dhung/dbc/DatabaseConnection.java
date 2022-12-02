@@ -9,9 +9,9 @@ public class DatabaseConnection {
     private static void createConnection() throws SQLException {
         try {
             String dbURL = "jdbc:sqlserver://DESKTOP-2021EYY;"+
-                            "databaseName=ch3b1;"+
-                            "encrypt=true; trustServerCertificate=true;"+
-                            "sslProtocol=TLSv1.2";
+                    "databaseName=ch3b1;"+
+                    "encrypt=true; trustServerCertificate=true;"+
+                    "sslProtocol=TLSv1.2";
             String user  =  "sa";
             String pass  =  "kimhung29042002";
 
