@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" stylesheets="account-page.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <JFXButton id="Jfx_btnAccountInformation" buttonType="RAISED" layoutX="102.0" layoutY="150.0" prefHeight="100.0" prefWidth="250.0" styleClass="jfx-button" stylesheets="@account-page.css" text="Thông tin tài khoản" textFill="#226fc1" wrapText="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0">
+      <JFXButton buttonType="RAISED" layoutX="102.0" layoutY="150.0" prefHeight="100.0" prefWidth="250.0" styleClass="jfx-button" stylesheets="@account-page.css" text="Thông tin tài khoản" textFill="#226fc1" wrapText="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>
@@ -21,7 +21,7 @@
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="94.0" layoutY="285.0" prefHeight="100.0" prefWidth="250.0" stylesheets="@account-page.css" text="Thông tin                        nhân khẩu/hộ khẩu" textFill="#226fc1" wrapText="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="275.0">
+      <JFXButton buttonType="RAISED" layoutX="94.0" layoutY="285.0" prefHeight="100.0" prefWidth="250.0" styleClass="jfx-button" stylesheets="@account-page.css" text="Thông tin                        nhân khẩu/hộ khẩu" textFill="#226fc1" wrapText="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="275.0">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>

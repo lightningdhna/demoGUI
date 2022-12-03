@@ -1,0 +1,56 @@
+.txtField{
+    -fx-background-radius: 15 15 15 15;
+}
+.label .Font{
+    -fx-font-family: Cursive;
+}
+.label .Text{
+    -fx-font-family: Sans-Serif;
+    -fx-font-size: 14px;
+}
+#lblCreateAccount{
+    -fx-text-fill: linear-gradient(#000046, #1cb5e0);
+}
+#lblCreateAccount:hover{
+    -fx-text-fill: linear-gradient(#1a2980, #26d0ce);
+    -fx-font-weight: bold;
+}
+#blue {
+    /*-fx-background-color: linear-gradient(#1488cc, #2b32b2);*/
+    -fx-background-color: linear-gradient(#000046, #1cb5e0);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 26 26 26 26;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#blue:hover {
+    -fx-background-color: linear-gradient(#1a2980, #26d0ce);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 26 26 26 26;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight:bold;
+}
+* {
+	-fx-darkest-grey-color: #323232;
+}
+
+.check-box .box {
+	-fx-background-color: white;
+	-fx-border-color: -fx-darkest-grey-color;
+	-fx-border-radius: 0;
+}
+.check-box .mark {
+ 	-fx-shape: "M1.73,12.91 8.1,19.28 22.79,4.59 22.79,1.59 8.1,16.28 1.73,9.91";
+}
+.check-box:selected .mark {
+	-fx-background-color: white;
+}
+.check-box:selected .box {
+	-fx-background-color: -fx-darkest-grey-color;
+}

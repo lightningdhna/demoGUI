@@ -1,0 +1,50 @@
+#AnchorPane{
+    -fx-background-color: #fff;
+}
+.txtField{
+    -fx-background-radius: 15 15 15 15;
+}
+.label .Font{
+    -fx-font-family: Cursive;
+}
+.label .Text{
+    -fx-font-family: Sans-Serif;
+    -fx-font-size: 14px;
+}
+.jfx-button{
+    -fx-background-color: #fff;
+    -fx-background-radius: 0 0 0 80;
+    -fx-font-size: 20px;
+    -fx-font-family: Serif;
+    -fx-text-fill: #000000;
+    /*-fx-font-weight: bold;*/
+}
+.jfx-button:hover{
+    -fx-background-color: linear-gradient(#2680d9, #65d5fa);
+    -fx-background-radius: 0 0 0 80;
+    -fx-font-size: 20px;
+    -fx-font-family: Serif;
+    -fx-text-fill: #4682b4;
+    -fx-font-weight: bold;
+}
+#blue {
+    /*-fx-background-color: linear-gradient(#1488cc, #2b32b2);*/
+    -fx-background-color: linear-gradient(#000046, #1cb5e0);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 26 26 26 26;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#blue:hover {
+    -fx-background-color: linear-gradient(#1a2980, #26d0ce);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 26 26 26 26;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight:bold;
+}

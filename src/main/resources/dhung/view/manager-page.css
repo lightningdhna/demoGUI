@@ -1,5 +1,9 @@
+#AnchorPane{
+    -fx-background-color: #eaeaea;
+}
 .jfx-button{
     -fx-background-color: #eaeaea;
+    -fx-background-radius: 12 12 12 12;
     -fx-font-size: 20px;
     -fx-font-family: Serif;
     -fx-text-fill: #4682b4;
@@ -7,6 +11,7 @@
 }
 .jfx-button:hover{
     -fx-background-color: rgba(51, 54, 59, 1);
+    -fx-background-radius: 12 12 12 12;
     -fx-font-size: 20px;
     -fx-font-family: Serif;
     -fx-text-fill: #4682b4;
