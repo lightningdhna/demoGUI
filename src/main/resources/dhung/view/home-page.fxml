@@ -14,16 +14,16 @@
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>
       </JFXButton>
-      <JFXButton id="btnsearch" layoutX="601.0" layoutY="78.0" prefHeight="40.0" prefWidth="40.0" stylesheets="@home-page.css" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="70.0">
+      <JFXButton id="btnsearch" contentDisplay="CENTER" layoutX="607.0" layoutY="78.0" prefHeight="30.0" prefWidth="51.0" stylesheets="@home-page.css" AnchorPane.leftAnchor="607.0" AnchorPane.topAnchor="70.0">
          <graphic>
-            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="29.0" fitWidth="29.0">
                <image>
-                  <Image url="@../../icon/search.png" />
+                  <Image url="@../../icon/icons8-search.gif" />
                </image>
             </ImageView>
          </graphic>
       </JFXButton>
-      <TextField layoutX="125.0" layoutY="88.0" prefHeight="30.0" prefWidth="450.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="75.0" />
+      <TextField id="textFieldSearch" layoutX="125.0" layoutY="88.0" prefHeight="30.0" prefWidth="450.0" promptText="Tìm kiếm" stylesheets="@home-page.css" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="75.0" />
       <JFXButton buttonType="RAISED" layoutX="426.0" layoutY="200.0" prefHeight="112.0" prefWidth="218.0" styleClass="jfx-button" stylesheets="@home-page.css" text="Thành viên trong gia đình" textAlignment="CENTER" textFill="#226fc1" wrapText="true">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />

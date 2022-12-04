@@ -3,6 +3,13 @@
 }
 .txtField{
     -fx-background-radius: 15 15 15 15;
+    -fx-font-family: Sans-Serif;
+    -fx-text-fill: linear-gradient(#000046, #1cb5e0);
+    /*-fx-prompt-text-fill: linear-gradient(#c9d6ff, #e3e3e2);*/
+    -fx-prompt-text-text-fill: #a9a9a9;
+}
+.txtField:hover{
+    -fx-background-radius: 15 15 15 15;
 }
 .label .Font{
     -fx-font-family: Cursive;
@@ -11,21 +18,23 @@
     -fx-font-family: Sans-Serif;
     -fx-font-size: 14px;
 }
-.jfx-button{
+#jfx-button-exit{
     -fx-background-color: #fff;
-    -fx-background-radius: 0 0 0 80;
+    -fx-background-radius: 0 0 0 30;
     -fx-font-size: 20px;
     -fx-font-family: Serif;
     -fx-text-fill: #000000;
+    -fx-pref-height: 30px;
     /*-fx-font-weight: bold;*/
 }
-.jfx-button:hover{
-    -fx-background-color: linear-gradient(#2680d9, #65d5fa);
-    -fx-background-radius: 0 0 0 80;
+#jfx-button-exit:hover{
+    -fx-background-color: #fff;
+    -fx-background-radius: 0 0 0 36;
     -fx-font-size: 20px;
     -fx-font-family: Serif;
     -fx-text-fill: #4682b4;
     -fx-font-weight: bold;
+    -fx-pref-height: 40px;
 }
 #blue {
     /*-fx-background-color: linear-gradient(#1488cc, #2b32b2);*/

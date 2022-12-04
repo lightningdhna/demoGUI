@@ -1,5 +1,30 @@
+#AnchorPane{
+    -fx-background-color: #fff;
+}
 .txtField{
     -fx-background-radius: 15 15 15 15;
+    -fx-font-family: Sans-Serif;
+    -fx-text-fill: linear-gradient(#000046, #1cb5e0);
+    /*-fx-prompt-text-fill: linear-gradient(#c9d6ff, #e3e3e2);*/
+    -fx-prompt-text-text-fill: #a9a9a9;
+}
+.txtField:hover{
+    -fx-background-radius: 15 15 15 15;
+}
+#jfx-button-Close{
+    -fx-background-color: #fff;
+    -fx-background-radius: 40 40 40 40;
+    -fx-font-size: 20px;
+    -fx-font-family: Serif;
+    -fx-text-fill: #fff;
+    /*-fx-font-weight: bold;*/
+}
+#jfx-button-Close:hover{
+    -fx-background-radius: 40 40 40 40;
+    -fx-font-size: 20px;
+    -fx-font-family: Serif;
+    -fx-text-fill: #4682b4;
+    -fx-font-weight: bold;
 }
 .label .Font{
     -fx-font-family: Cursive;
@@ -53,4 +78,8 @@
 }
 .check-box:selected .box {
 	-fx-background-color: -fx-darkest-grey-color;
+}
+.mark:hover{
+    -fx-background-color: #fff;
+    -fx-border-color: white;
 }

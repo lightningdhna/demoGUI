@@ -1,5 +1,5 @@
 #AnchorPane{
-    -fx-background-color: #eaeaea;
+    -fx-background-color: #fff;
 }
 .jfx-button{
     -fx-background-color: #eaeaea;
@@ -16,9 +16,16 @@
     -fx-font-weight: bold;
 }
 #btnsearch{
-    -fx-background-color: rgba(51, 54, 59, 1);
+    -fx-background-color: #fff;
 }
-#btnsearch:hover{
-    -fx-background-color: rgba(51, 54, 59, 0.6);
+#textFieldSearch{
+    -fx-background-radius: 15 15 15 15;
+    -fx-font-family: Sans-Serif;
+    -fx-text-fill: linear-gradient(#000046, #1cb5e0);
+    -fx-prompt-text-fill: #d3d3d3;
+}
+#textFieldSearch:hover{
+    -fx-background-radius: 15 15 15 15;
+    -fx-prompt-text-fill: #a9a9a9;
 }
 
