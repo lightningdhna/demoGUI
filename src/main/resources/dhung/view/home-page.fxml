@@ -7,25 +7,24 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" stylesheets="@home-page.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <JFXButton buttonType="RAISED" layoutX="146.0" layoutY="225.0" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #EEEEEE;" text="Danh sách nhận thưởng" textAlignment="CENTER" textFill="#226fc1" wrapText="true" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="200.0">
+      <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="206.0" prefHeight="112.0" prefWidth="208.0" styleClass="jfx-button" stylesheets="@home-page.css" text="Danh sách nhận thưởng" textAlignment="CENTER" textFill="#226fc1" wrapText="true" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="206.0">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>
       </JFXButton>
-      <TextField layoutX="125.0" layoutY="88.0" prefHeight="30.0" prefWidth="450.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="75.0" />
-      <JFXButton layoutX="601.0" layoutY="78.0" prefHeight="40.0" prefWidth="40.0" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="70.0">
+      <JFXButton id="btnsearch" contentDisplay="CENTER" layoutX="607.0" layoutY="78.0" prefHeight="30.0" prefWidth="51.0" stylesheets="@home-page.css" AnchorPane.leftAnchor="607.0" AnchorPane.topAnchor="70.0">
          <graphic>
-            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="29.0" fitWidth="29.0">
                <image>
-                  <Image url="@../../icon/search.png" />
+                  <Image url="@../../icon/icons8-search.gif" />
                </image>
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="283.0" layoutY="200.0" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #EEEEEE;" text="Thành viên trong gia đình" textAlignment="CENTER" textFill="#226fc1" wrapText="true">
+      <TextField id="textFieldSearch" layoutX="125.0" layoutY="88.0" prefHeight="30.0" prefWidth="450.0" promptText="Tìm kiếm" stylesheets="@home-page.css" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="75.0" />
+      <JFXButton buttonType="RAISED" layoutX="426.0" layoutY="200.0" prefHeight="112.0" prefWidth="218.0" styleClass="jfx-button" stylesheets="@home-page.css" text="Thành viên trong gia đình" textAlignment="CENTER" textFill="#226fc1" wrapText="true">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>

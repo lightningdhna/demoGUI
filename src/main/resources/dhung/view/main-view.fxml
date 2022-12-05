@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dhung.view.MainViewController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dhung.view.MainViewController">
    <children>
       <AnchorPane fx:id="functionAnchorPane" layoutY="14.0" onMouseExited="#showIcon" prefWidth="250.0" style="-fx-background-color: #336699;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <effect>
@@ -173,28 +173,28 @@
       <AnchorPane fx:id="root" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <JFXButton buttonType="RAISED" onMouseClicked="#exit" prefHeight="30.0" prefWidth="30.0" ripplerFill="#df1616" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@../../icon/exit.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../../icon/icons8-close.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </JFXButton>
             <JFXButton buttonType="RAISED" onMouseClicked="#logOut" prefHeight="30.0" prefWidth="30.0" ripplerFill="#df1616" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
-               <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" onMouseClicked="#logOut" pickOnBounds="true">
-                     <image>
-                        <Image url="@../../icon/logout.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../../icon/icons8-skip-to-start.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </JFXButton>
          </children>
       </AnchorPane>
