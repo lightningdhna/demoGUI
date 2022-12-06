@@ -22,7 +22,7 @@
     -fx-background-radius: 15 15 15 15;
     -fx-font-family: Sans-Serif;
     -fx-text-fill: linear-gradient(#000046, #1cb5e0);
-    -fx-prompt-text-fill: #d3d3d3;
+    -fx-prompt-text-fill: #c0c0c0;
 }
 #textFieldSearch:hover{
     -fx-background-radius: 15 15 15 15;

@@ -82,14 +82,14 @@
                   <Image url="@../../icon/password.png" />
                </image>
             </ImageView>
-            <JFXButton id="jfx-button-Close" buttonType="RAISED" contentDisplay="CENTER" layoutX="242.0" onMouseClicked="#exit" prefHeight="54.0" prefWidth="56.0" ripplerFill="#df1616" stylesheets="@login-page.css">
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="256.0" onMouseClicked="#exit" prefHeight="35.0" prefWidth="46.0" ripplerFill="#df1616" styleClass="jfx-button-Close" stylesheets="@login-page.css">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                  <ImageView fitHeight="32.0" fitWidth="32.0">
                      <image>
-                        <Image url="@../../icon/icons8-shutdown.gif" />
+                        <Image url="@../../icon/exit-full-screen.png" />
                      </image>
                   </ImageView>
                </graphic>
