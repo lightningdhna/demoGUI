@@ -47,9 +47,6 @@
     -fx-text-fill: white;
     -fx-font-size: 20px;
 }
-#blue Text {
-    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
-}
 #blue:hover {
     -fx-background-color: linear-gradient(#1a2980, #26d0ce);
     -fx-background-insets: 0,1,2,3;

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" stylesheets="@home-page.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" stylesheets="@home-page.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="206.0" prefHeight="112.0" prefWidth="208.0" styleClass="jfx-button" stylesheets="@home-page.css" text="Danh sách nhận thưởng" textAlignment="CENTER" textFill="#226fc1" wrapText="true" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="206.0">
          <font>

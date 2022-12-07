@@ -2,12 +2,16 @@
     -fx-background-color: #b0e0e6;
 }
 .button{
-    -fx-background-color: rgba(32,50,100, 0.5);
-    -fx-border-radius: 10;
+    -fx-background-color: #eaeaea;
+    -fx-font-family: Serif;
+    -fx-text-fill: #4682b4;
+    -fx-font-weight: bold;
 }
 .button:hover{
-    -fx-background-color: rgba(32,50,100);
-    -fx-border-radius: 10;
+    -fx-background-color: rgba(51, 54, 59, 1);
+    -fx-font-family: Serif;
+    -fx-text-fill: #4682b4;
+    -fx-font-weight: bold;
 }
 #HBox{
     -fx-background-color: #87ceeb;

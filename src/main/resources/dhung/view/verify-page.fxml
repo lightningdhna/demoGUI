@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" stylesheets="@verify-page.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" stylesheets="@verify-page.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <JFXButton buttonType="RAISED" layoutX="85.0" layoutY="95.0" prefHeight="53.0" prefWidth="421.0" styleClass="jfx-button" stylesheets="@verify-page.css" text="Xác thực thông tin nhân khẩu / hộ khẩu" textFill="#226fc1" wrapText="true">
          <font>

@@ -21,7 +21,7 @@
     -fx-background-color: rgba(51, 54, 59, 1);
 }
 .jfx-button-main-view:focused{
-    -fx-background-color: rgba(51, 54, 59, 0.6);
+    -fx-background-color: #f953c6;
 }
 .jfx-button-main-view-close{
 }
