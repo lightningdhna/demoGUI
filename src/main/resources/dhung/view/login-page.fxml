@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXCheckBox?>
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -13,21 +14,21 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #102933; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #102933; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="500.0" fitWidth="850.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../image/background1.png" />
          </image>
       </ImageView>
-      <Pane layoutX="623.0" layoutY="136.0" prefWidth="300.0" style="-fx-background-color: #F5F5F5;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane id="AnchorPane" layoutX="623.0" layoutY="136.0" prefWidth="300.0" stylesheets="@login-page.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="50.0" layoutY="75.0" prefHeight="50.0" prefWidth="150.0" text="Sign in" textFill="#2596be">
+            <Label layoutX="70.0" layoutY="80.0" prefHeight="50.0" prefWidth="150.0" styleClass="labelFont" stylesheets="@login-page.css" text="Sign in" textFill="#2596be">
                <font>
                   <Font name="SansSerif Bold" size="35.0" />
                </font>
             </Label>
-            <TextField fx:id="textField" layoutX="50.0" layoutY="150.0" prefHeight="35.0" prefWidth="200.0" promptText="Username" style="-fx-background-radius: 15;">
+            <TextField fx:id="textField" layoutX="70.0" layoutY="155.0" prefHeight="35.0" prefWidth="200.0" promptText="Username" styleClass="txtField" stylesheets="@login-page.css">
                <font>
                   <Font size="14.0" />
                </font>
@@ -35,7 +36,7 @@
                   <Insets left="15.0" right="30.0" />
                </padding>
             </TextField>
-            <PasswordField fx:id="passwordField" layoutX="50.0" layoutY="200.0" prefHeight="35.0" prefWidth="200.0" promptText="Passsword" style="-fx-background-radius: 15;">
+            <PasswordField fx:id="passwordField" layoutX="70.0" layoutY="205.0" prefHeight="35.0" prefWidth="200.0" promptText="Passsword" styleClass="txtField" stylesheets="@login-page.css">
                <font>
                   <Font size="14.0" />
                </font>
@@ -43,22 +44,27 @@
                   <Insets left="15.0" right="30.0" />
                </padding>
             </PasswordField>
-            <JFXCheckBox fx:id="checkBox" layoutX="50.0" layoutY="250.0" selected="true" text="Remember me">
+            <JFXCheckBox fx:id="checkBox" checkedColor="#5a5a5a" layoutX="70.0" layoutY="255.0" selected="true" stylesheets="@login-page.css" text="Remember me">
                <font>
                   <Font name="SansSerif Regular" size="14.0" />
                </font>
+               <styleClass>
+                  <String fx:value="mark" />
+                  <String fx:value="Text" />
+                  <String fx:value="box" />
+               </styleClass>
             </JFXCheckBox>
-            <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="280.0" onMouseClicked="#signIn" prefHeight="50.0" prefWidth="200.0" ripplerFill="#194181" style="-fx-background-color: #2596be; -fx-background-radius: 30;" text="Sign in" textFill="WHITE">
+            <JFXButton id="blue" buttonType="RAISED" layoutX="95.0" layoutY="302.0" onMouseClicked="#signIn" prefHeight="50.0" prefWidth="150.0" ripplerFill="#194181" stylesheets="@login-page.css" text="Sign in" textFill="WHITE">
                <font>
                   <Font name="SansSerif Regular" size="20.0" />
                </font>
             </JFXButton>
-            <Label layoutX="50.0" layoutY="400.0" text="New here?">
+            <Label layoutX="70.0" layoutY="405.0" styleClass="Text" stylesheets="@login-page.css" text="New here?">
                <font>
                   <Font name="SansSerif Regular" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="120.0" layoutY="400.0" onMouseClicked="#signUp" text="Create an account" textFill="#2596be">
+            <Label id="lblCreateAccount" layoutX="140.0" layoutY="405.0" onMouseClicked="#signUp" styleClass="Text" stylesheets="@login-page.css" text="Create an account" textFill="#2596be">
                <font>
                   <Font name="SansSerif Regular" size="14.0" />
                </font>
@@ -66,27 +72,27 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Label>
-            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../icon/username.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../icon/password.png" />
                </image>
             </ImageView>
-            <JFXButton buttonType="RAISED" layoutX="250.0" onMouseClicked="#exit" prefHeight="30.0" prefWidth="30.0" ripplerFill="#df1616">
-               <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@../../icon/exit.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="256.0" onMouseClicked="#exit" prefHeight="35.0" prefWidth="46.0" ripplerFill="#df1616" styleClass="jfx-button-Close" stylesheets="@login-page.css">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0">
+                     <image>
+                        <Image url="@../../icon/exit-full-screen.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </JFXButton>
          </children>
       </Pane>

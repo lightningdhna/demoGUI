@@ -4,15 +4,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" stylesheets="@statistic-page.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <JFXButton buttonType="RAISED" layoutX="89.0" layoutY="98.0" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #EEEEEE;" text="Thống kê danh sách nhận thưởng" textFill="#226fc1" wrapText="true">
+      <JFXButton buttonType="RAISED" layoutX="89.0" layoutY="98.0" prefHeight="61.0" prefWidth="370.0" styleClass="jfx-button" stylesheets="@statistic-page.css" text="Thống kê danh sách nhận thưởng" textFill="#226fc1" wrapText="true">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="422.0" layoutY="98.0" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #EEEEEE;" text="Thống kê thu chi" textFill="#226fc1" wrapText="true">
+      <JFXButton buttonType="RAISED" layoutX="89.0" layoutY="183.0" prefHeight="61.0" prefWidth="370.0" styleClass="jfx-button" stylesheets="@statistic-page.css" text="Thống kê thu chi" textFill="#226fc1" wrapText="true">
          <font>
             <Font name="SansSerif Bold Italic" size="20.0" />
          </font>

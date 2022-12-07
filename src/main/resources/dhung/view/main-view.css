@@ -1,0 +1,30 @@
+.jfx-button-Close{
+    -fx-pref-height: 40px;
+    -fx-pref-width: 40px;
+}
+.jfx-button-Close:hover{
+    -fx-pref-height: 43px;
+    -fx-pref-width: 43px;
+}
+.menu-icon{
+    -fx-background-color: #434343;
+    /*-fx-background-color: rgba(51, 54, 59, 1);*/
+}
+.AnchorPane{
+    -fx-background-color: #434343;
+}
+.jfx-button-main-view{
+    -fx-background-color: #434343;
+}
+.jfx-button-main-view:hover{
+    -fx-border-color: blue;
+    -fx-background-color: rgba(51, 54, 59, 1);
+}
+.jfx-button-main-view:focused{
+    -fx-background-color: #f953c6;
+}
+.jfx-button-main-view-close{
+}
+.jfx-button-main-view-close:hover{
+    -fx-border-color: blue;
+}
