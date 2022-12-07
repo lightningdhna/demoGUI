@@ -1,0 +1,14 @@
+.jfx-button{
+    -fx-background-color: #eaeaea;
+    -fx-font-size: 20px;
+    -fx-font-family: Serif;
+    -fx-text-fill: #4682b4;
+    -fx-font-weight: bold;
+}
+.jfx-button:hover{
+    -fx-background-color: rgba(51, 54, 59, 1);
+    -fx-font-size: 20px;
+    -fx-font-family: Serif;
+    -fx-text-fill: #4682b4;
+    -fx-font-weight: bold;
+}

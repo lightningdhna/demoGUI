@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -25,7 +26,6 @@ public class MainViewController extends Page implements Initializable {
     VerifyPageController verifyPage;
     ManagerPageController managerPage;
     StatisticPageController statisticPage;
-
 
     public void setHomePage(){
         if(homePage==null) {

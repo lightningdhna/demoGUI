@@ -1,0 +1,31 @@
+#AnchorPane{
+    -fx-background-color: #fff;
+}
+.jfx-button{
+    -fx-background-color: #eaeaea;
+    -fx-font-size: 20px;
+    -fx-font-family: Serif;
+    -fx-text-fill: #4682b4;
+    -fx-font-weight: bold;
+}
+.jfx-button:hover{
+    -fx-background-color: rgba(51, 54, 59, 1);
+    -fx-font-size: 20px;
+    -fx-font-family: Serif;
+    -fx-text-fill: #4682b4;
+    -fx-font-weight: bold;
+}
+#btnsearch{
+    -fx-background-color: #fff;
+}
+#textFieldSearch{
+    -fx-background-radius: 15 15 15 15;
+    -fx-font-family: Sans-Serif;
+    -fx-text-fill: linear-gradient(#000046, #1cb5e0);
+    -fx-prompt-text-fill: #c0c0c0;
+}
+#textFieldSearch:hover{
+    -fx-background-radius: 15 15 15 15;
+    -fx-prompt-text-fill: #a9a9a9;
+}
+

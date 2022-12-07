@@ -8,12 +8,12 @@ public class DatabaseConnection {
 
     private static void createConnection() throws SQLException {
         try {
-            String dbURL = "jdbc:sqlserver://DESKTOP-9UGDV8N\\SQLEXPRESS;"+
-                            "databaseName=demoGUI;"+
-                            "encrypt=true; trustServerCertificate=true;"+
-                            "sslProtocol=TLSv1.2";
+            String dbURL = "jdbc:sqlserver://DESKTOP-2021EYY;"+
+                    "databaseName=ch3b1;"+
+                    "encrypt=true; trustServerCertificate=true;"+
+                    "sslProtocol=TLSv1.2";
             String user  =  "sa";
-            String pass  =  "Na01639931063184";
+            String pass  =  "kimhung29042002";
 
             conn = DriverManager.getConnection(dbURL, user, pass);
             statement=conn.createStatement();
